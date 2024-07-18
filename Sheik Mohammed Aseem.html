@@ -6,14 +6,16 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1546aa7546.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
     <ul class="navBar">
-        <li><a href="#">LANGUAGES</a></li>
-        <li><a href="#">ACHIEVEMENTS</a></li>
-        <li><a href="#">PROJECTS</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><h1 class="Portfolio">PORTFOLIO</h1></li>
+        <li><a href="skills.html"><i class="fa fa-bolt"></i>  SKILLS</a></li>
+        <li><a href="#"><i class="fa fa-trophy"></i> ACHIEVEMENTS</a></li>
+        <li><a href="#"><i class="fa fa-laptop"></i> PROJECTS</a></li>
+        <li><a onclick="toogle()"><i class="fa fa-id-card"></i> CONTACT</a></li>
     </ul>
   </header>
   <div class="main">
@@ -34,7 +36,56 @@
         <div class="rightDown"><p id="tp"></p></div>
     </div>
   </div>
-  <a href="MyResume .pdf" download>
-  <button><i class="fa fa-download"></i></button></a>
+
+<!-- CONTACT-->
+
+  <div class="toogle-bar">
+    <div class="btn-group">
+        <ul class="wrapper">
+            <a href="https://www.facebook.com/as33m.M.A?mibextid=ZbWKwL">
+                <li class="icon facebook">
+                 <span class="tooltip">Facebook</span>
+                 <span><i class="fab fa-facebook-f"></i></span>
+                </li>
+            </a>
+            <a href="https://x.com/webdevcody?t=zTP4lnWgMVbzN873pq_VTw&s=09">
+                <li class="icon twitter">
+                    <span class="tooltip">Twitter</span>
+                    <span><i class="fab fa-twitter"></i></span>
+                </li>
+            </a>
+            <a href="https://www.instagram.com/as_33_m_?igsh=MW1mZXB3dzdkZGZyYQ==">
+            <li class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <span><i class="fab fa-instagram"></i></span>
+            </li></a>
+            <a href="https://github.com/Aseemcr7">
+            <li class="icon github">
+              <span class="tooltip">Github</span>
+              <span><i class="fab fa-github"></i></span>
+            </li></a>
+            <a href="https://www.youtube.com/channel/UCOD-RJqyCGZobWc60C9IP4w">
+            <li class="icon youtube">
+              <span class="tooltip">Youtube</span>
+              <span><i class="fab fa-youtube"></i></span>
+            </li></a>
+            <li onclick="show()" class="icon Location">
+              <span class="tooltip">Location</span>
+              <span><i class="fa-solid fa-map-location-dot"></i></span>
+            </li>
+        </ul>
+  </div>
+</div>
+
+<div class="popoverlay"></div>
+<div class="popup"><h2 style="color: ghostwhite;">Location</h2><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d816.9246622374723!2d80.1013153935003!3d13.101056464523385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1706444604072!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <button onclick="hide()">Cancel</button>
+        </div>
+
+<a href="MyResume .pdf" download>
+ <button id="downbtn"><i class="fa fa-download"></i></button></a>
+
+  <script src="contact.js"></script>
 </body>
 </html>
