@@ -5,7 +5,7 @@
 }
 
 html, body {
-    background-color: black;
+    background-image: url(achbk.jpg);
     font-family: 'Raleway', sans-serif;
     height: 100%;
     width: 100%;
@@ -96,7 +96,7 @@ ul.navBar a:hover:before, ul.navBar a:hover:after {
     font-size: 35px;
     color: white;
     position:relative;
-    right:33pc;
+    right:32pc;
   }
 
   /*toogle bar*/
@@ -261,4 +261,14 @@ wrapper {
         padding: 5px;
         border-radius: 6px;
         border: none;
+      }
+      .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .imgs{
+        height: 200px;
+        width: 400px;
+        margin:35px;
       }

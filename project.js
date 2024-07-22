@@ -47,16 +47,18 @@ function hide() {
     popOverlay.style.display = 'none';
 }
 
-function detail() {
-  var detail = document.querySelector('.detail');
-  var introduce = document.querySelector('.introduce');
+function detail(button) {
+  var item = button.closest('.item');
+  var detail = item.querySelector('.detail');
+  var introduce = item.querySelector('.introduce');
   detail.style.display = 'flex';
   introduce.style.display = 'none';
 }
 
-function intro() {
-  var detail = document.querySelector('.detail');
-  var introduce = document.querySelector('.introduce');
+function intro(button) {
+  var item = button.closest('.item');
+  var detail = item.querySelector('.detail');
+  var introduce = item.querySelector('.introduce');
   detail.style.display = 'none';
   introduce.style.display = 'flex';
 }

@@ -99,7 +99,7 @@ ul.navBar a:hover:before, ul.navBar a:hover:after {
   font-size: 35px;
   color: white;
   position:relative;
-  right: 33pc ;
+  right: 30pc ;
 }
 
 /*toogle bar*/
@@ -357,3 +357,4 @@ wrapper {
     font-weight: 500;
     line-height: 1em;
 }
+
